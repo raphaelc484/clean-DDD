@@ -1,0 +1,24 @@
+{
+  "name": "04-clean-ddd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run --dir src/domain/use-cases",
+    "test:watch": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
+    "@types/node": "^18.16.3",
+    "eslint": "^8.39.0",
+    "typescript": "^5.0.4",
+    "vite-tsconfig-paths": "^4.2.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "vitest": "^0.31.0"
+  }
+}

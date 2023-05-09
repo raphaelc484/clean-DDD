@@ -23,4 +23,10 @@ export class InMemoryAnswersRepository implements AnswersRepository {
 
     this.items.splice(itemIndex)
   }
+
+  async save(answer: Answer) {
+    const itemIndex = this.items.findIndex((item) => item.id === answer.id)
+
+    this.items[itemIndex] = answer
+  }
 }

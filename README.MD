@@ -63,7 +63,7 @@ npm run test:watch
 Para gerar os arquivos de coverage utilize do comando:
 
 ```
-test:coverage
+npm run test:coverage
 ```
 ## 🛠️ Construído com
 

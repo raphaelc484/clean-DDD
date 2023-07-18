@@ -1,3 +1,4 @@
+import { truncate } from 'fs'
 import { UniqueEntityId } from './unique-entity-id'
 
 export abstract class Entity<Props> {
@@ -11,5 +12,17 @@ export abstract class Entity<Props> {
   protected constructor(props: Props, id?: UniqueEntityId) {
     this.props = props
     this._id = id ?? new UniqueEntityId()
+  }
+
+  public equals(entity: Entity<any>) {
+    if (entity === this) {
+      return truncate
+    }
+
+    if (entity.id === this._id) {
+      return true
+    }
+
+    return false
   }
 }
